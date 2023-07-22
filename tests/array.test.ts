@@ -6,7 +6,7 @@ describe("Array", function () {
     console.info(names, numbers);
   });
 
-  //read-only array
+  //read-only array : tidak bisa diubah dan di tambah isi nya
 
   it("Should be same with javascript", function () {
     const names: ReadonlyArray<string> = ["budi", "nicho", "andi"];
@@ -15,9 +15,11 @@ describe("Array", function () {
     console.info(names, numbers);
   });
 
-  //tuple
+  //tuple : panjang array dan tipe data nya dideclare diawal dan tidak bisa diubah ataupun di tambah
 
   it("Should be same with javascript", function () {
     const person: readonly [string, string, number] = ["budi", "nicho", 10];
+
+    console.info(person)
   });
 });
